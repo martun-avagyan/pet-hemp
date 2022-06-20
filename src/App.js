@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import TopNavigation from "./components/TopNavigation";
+import TopBanner from "./components/TopBanner";
+import Reviews from "./components/Reviews";
+import ShopByConcern from "./components/ShopByConcern";
+import PopularProducts from "./components/PopularProducts";
+import OurStory from "./components/OurStory/OurStory";
+import TrustedGuarantee from "./components/TrustedGuarantee";
+import MoreInfoSection from "./components/MoreInfoSection";
+import SubscribeSection from "./components/SubscribeSection";
+import ImageGrid from "./components/ImageGrid";
+import KeyWays from "./components/KeyWays";
+import useStyles from "./styles";
 
 function App() {
+  useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <TopNavigation />
+      <TopBanner />
+      <Reviews />
+      <PopularProducts />
+      <ShopByConcern />
+      <OurStory />
+      <TrustedGuarantee />
+      <KeyWays />
+      <MoreInfoSection />
+      <ImageGrid />
+      <SubscribeSection />
     </div>
   );
 }
